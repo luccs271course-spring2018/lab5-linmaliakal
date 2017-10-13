@@ -13,26 +13,39 @@ public class LinkedStack<E> implements IStack<E> {
 
   @Override
   public E push(final E obj) {
-    // TODO
-    return null;
+    // DONE
+    topOfStackRef = new Node<>(obj, topOfStackRef);
+    return obj;
   }
 
   @Override
   public E peek() {
-    // TODO
-    return null;
+    // DONE
+    if (isEmpty()) {
+      throw new NoSuchElementException ();
+    }
+    else {
+      return topOfStackRef.data;
+    }
   }
 
   @Override
   public E pop() {
-    // TODO
-    return null;
+    // DONE
+    if (isEmpty()) {
+      throw new NoSuchElementException();
+    }
+    else {
+      E result = topOfStackRef.data;
+      topOfStackRef = topOfStackRef.next;
+      return result; 
+    }
   }
 
   @Override
   public boolean isEmpty() {
-    // TODO
-    return false;
+    // DONE
+    return topOfStackRef == null;
   }
 
   @Override
