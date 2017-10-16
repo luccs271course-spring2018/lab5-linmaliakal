@@ -10,7 +10,7 @@ public class LinkedStack<E> implements IStack<E> {
   private Node<E> top;
 
   // DONE why don't we need an explicit constructor?
-  // check Answers.md 
+  // check Answers.md
 
   @Override
   public E push(final E obj) {
@@ -57,7 +57,7 @@ public class LinkedStack<E> implements IStack<E> {
       newList.add(top.data);
       top = top.next;
     }
-    
+
     return newList;
   }
 }

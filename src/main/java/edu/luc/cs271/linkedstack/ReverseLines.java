@@ -9,6 +9,14 @@ public class ReverseLines {
 
     final Scanner input = new Scanner(System.in);
     String line;
-    while ((line = input.nextLine()) != null) {}
+    LinkedStack<String> stackReverse = new LinkedStack<String>();
+    while ((line = input.nextLine()) != null) {
+      // System.out.println(line);
+      stackReverse.push(line);
+    }
+    input.close();
+    while (!stackReverse.isEmpty()) {
+      System.out.println(stackReverse.pop());
+    }
   }
 }
