@@ -51,8 +51,15 @@ public class LinkedStack<E> implements IStack<E> {
 
   @Override
   public List<E> asList() {
-    // TODO implement using an ArrayList preallocated with the right size
-    // TODO add any instance variable(s) required to support this
-    return null;
+    // DONE implement using an ArrayList preallocated with the right size
+    // DONE add any instance variable(s) required to support this
+    List<E> newList = new ArrayList<E>();
+    
+    if (top != null) {
+      newList.add(top.data);
+      top = top.next;
+    }
+    
+    return newList;
   }
 }
