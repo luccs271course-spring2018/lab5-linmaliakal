@@ -10,9 +10,7 @@ public class LinkedStack<E> implements IStack<E> {
   private Node<E> top;
 
   // DONE why don't we need an explicit constructor?
-  /* An explicit constructor is not needed because with a LinkedList, the nodes are added individually and
-  with this class LinkedStack, the interface has already been implemented. 
-  */
+  // check Answers.md 
 
   @Override
   public E push(final E obj) {
