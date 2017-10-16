@@ -9,7 +9,9 @@ have a complexity of O(n). In `ReverseLines`, the complexity would be O(n).
 
 - How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list 
 but the `asList` method uses constant time and space?  
-We could have implemented `LinkedStack` by ...
+Instead of using `Node`, we could have implemented `LinkedStack` by using a LinkedList and implementing that, using other
+methods in the stack methods of `LinkedStack` to simulate what they do, like removeFirst to do what `pop` does and
+remove the first item of the stack. 
 
 - Is it better for `push` and `pop` to return the item or the stack itself? Briefly discuss the pros and cons of each design.   
 It is better for `push` and `pop` to return the items in the stack because each item of the stack is its own separate
