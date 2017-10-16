@@ -7,7 +7,8 @@ with this class LinkedStack, the interface has already been implemented.
 The methods `push` and `isEmpty` used in `LinkedStack` have the complexity of O(1), except for the methods `peek`, `pop`, and `asList`, which
 have a complexity of O(n). In `ReverseLines`, the complexity would be O(n).
 
-- How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list but the `asList` method uses constant time and space?
+- How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list 
+- but the `asList` method uses constant time and space?  
 We could have implemented `LinkedStack` by ...
 
 - Is it better for `push` and `pop` to return the item or the stack itself? Briefly discuss the pros and cons of each design.   
