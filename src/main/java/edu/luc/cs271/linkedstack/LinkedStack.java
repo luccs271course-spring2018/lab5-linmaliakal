@@ -9,8 +9,8 @@ public class LinkedStack<E> implements IStack<E> {
   /** The topmost node of this stack. The stack gets pushed down from here. */
   private Node<E> top;
 
-  // DONE why don't we need an explicit constructor?
-  // check Answers.md
+  /* DONE why don't we need an explicit constructor?
+  check Answers.md */
 
   @Override
   public E push(final E obj) {
