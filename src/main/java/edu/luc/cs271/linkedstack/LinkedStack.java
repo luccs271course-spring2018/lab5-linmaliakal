@@ -9,7 +9,10 @@ public class LinkedStack<E> implements IStack<E> {
   /** The topmost node of this stack. The stack gets pushed down from here. */
   private Node<E> top;
 
-  // TODO why don't we need an explicit constructor?
+  // DONE why don't we need an explicit constructor?
+  /* An explicit constructor is not needed because with a LinkedList, the nodes are added individually and
+  with this class LinkedStack, the interface has already been implemented. 
+  */
 
   @Override
   public E push(final E obj) {
@@ -56,6 +59,7 @@ public class LinkedStack<E> implements IStack<E> {
       newList.add(top.data);
       top = top.next;
     }
+    
     return newList;
   }
 }
